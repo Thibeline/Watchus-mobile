@@ -1,0 +1,19 @@
+<template name="layout">
+
+  <header>
+
+  {{> navbar}}
+
+  </header>
+
+{{#unless currentUser}}
+
+  <div id="login-box">{{> loginButtons}}</div>
+
+ {{else}}
+  {{> loginButtons}}
+  {{> yield}}
+
+{{/unless}}
+</template>
+

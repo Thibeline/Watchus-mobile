@@ -1,0 +1,65 @@
+/* CSS declarations go here */
+
+.navbarr {
+	height: 70px;
+	font-size: 3em;
+	vertical-align: middle;
+	position : fixed;
+	width: 100%;
+	background-color: hsl(195, 54%, 60%);
+	border : none;
+	z-index: 10;
+	bottom : 0;
+
+}
+
+.navbar-list {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.navbar-list > li {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	float:left;
+	padding-top: 11px;
+	border-left : solid hsl(195, 54%, 80%);
+}
+
+.navbar-list :first-child {
+	border-left: none;
+}
+.navbar-list > li > a {
+	color :hsl(222, 1%, 97%) ;
+	
+}
+
+a {
+	color :hsl(222, 1%, 97%) ;
+}
+
+#login-box li.dropdown {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#login-box li.dropdown .dropdown-menu {
+  float: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+#login-box li.dropdown .dropdown-menu .alert-danger {
+  color: #a94442;
+}
+
+#login-box li.dropdown .dropdown-menu:after  {
+visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
